@@ -42,21 +42,26 @@ class Human {
 
 // Initialize Mikael
 const mikael = new Human("Mikael");
+const furkan = new Human("Furkan");
 
 // Reprogramming process
 console.log("Initializing reprogramming sequence...");
 
 mikael.installUpgrade("Confidence v2.3");
 mikael.installUpgrade("Focus Booster");
+furkan.installUpgrade("Focus Booster");
 mikael.installUpgrade("Creative Thinking Module");
 
 mikael.updateTrait("focus", 85);
+furkan.updateTrait("focus", 100);
 mikael.updateTrait("energy", 90);
 mikael.updateTrait("productivity", 88);
-
+furkan.updateTrait("energy", 95);
 mikael.activateMode("BEAST_MODE");
 
 mikael.reboot();
+furkan.reboot();
 mikael.status();
+furkan.status();
 
 console.log("Reprogramming complete.");
